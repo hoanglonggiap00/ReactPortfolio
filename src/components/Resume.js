@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
@@ -112,121 +114,57 @@ const useStyles = makeStyles((theme) => ({
 const Resume = () => {
   const classes = useStyles();
   return (
-    <Box component="header" className={classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading}>
+    <Box component='header' className={classes.mainContainer}>
+      <Typography variant='h4' align='center' className={classes.heading}>
         Working Experience
       </Typography>
-      <Box component="div" className={classes.timeLine}>
+      <Box component='div' className={classes.timeLine}>
         <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2013
+          variant='h2'
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+          2021
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component='div' className={classes.timeLineItem}>
           <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            web design
+            variant='h5'
+            align='center'
+            className={classes.subHeading}>
+            Software Engineer Intern
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          <Typography variant='body1' align='center' className={classes.body1}>
+            Sellcrowd
           </Typography>
           <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            variant='subtitle1'
+            align='left'
+            className={classes.subtitle1}>
+            <ul>
+              <li>hi</li>
+            </ul>
           </Typography>
         </Box>
         <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2014
+          variant='h2'
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+          2020
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component='div' className={classes.timeLineItem}>
           <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            html & css
+            variant='h5'
+            align='center'
+            className={classes.subHeading}>
+            Web Developer
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2015
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Fullstack Javascript
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          <Typography variant='body1' align='center' className={classes.body1}>
+            Freelancer
           </Typography>
           <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Django & React
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            variant='subtitle1'
+            align='left'
+            className={classes.subtitle1}>
+            <ul>
+              <li>hello</li>
+            </ul>
           </Typography>
         </Box>
       </Box>

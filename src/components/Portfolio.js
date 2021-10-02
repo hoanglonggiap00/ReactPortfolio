@@ -91,7 +91,7 @@ const Portfolio = () => {
   return (
     <Box component='div' className={classes.mainContainer}>
       <Typography variant='h4' align='center' className={classes.heading}>
-        Working Experience
+        Personal Projects
       </Typography>
       <Grid container justify='center'>
         {/* Projects */}
