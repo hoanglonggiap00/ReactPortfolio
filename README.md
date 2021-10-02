@@ -1,124 +1,64 @@
-# react-tailwind-portfolio
+## Material UI Portfolio
 
-👨‍🎨 An open-source portfolio template built with React and Tailwind.
+A portfolio single page application using React and Material UI
 
-![Open React template preview](./demo.png)
+### Demo of this site available here [Material-UI-Portfolio Demo](https://materialui-portfolio.netlify.app/)
 
-Made with 💙 by [Brayden W](https://braydentw.github.io).
+#### Installing
 
-## Live demo
+Clone the repository using following command or download
 
-Check out the live demo here 👉️ [https://braydentw.github.io/react-tailwind-portfolio](https://braydentw.github.io/react-tailwind-portfolio)
+```
+git clone https://github.com/devmahmud/material-ui-portfolio.git
+```
 
-## Table of contents
+#### To install dependency
 
-* [Usage](#usage)
-  * [Available Scripts](#available-scripts)
-    * [npm start](#npm-start)
-    * [npm test](#npm-test)
-    * [npm run build](#npm-run-build)
-    * [npm run eject](#npm-run-eject)
-  * [Learn More](#learn-more)
-    * [Code Splitting](#code-splitting)
-    * [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-    * [Making a Progressive Web App](#making-a-progressive-web-app)
-    * [Advanced Configuration](#advanced-configuration)
-    * [Deployment](#deployment)
-    * [npm run build fails to minify](#npm-run-build-fails-to-minify)
-  * [Google Analytics Setup](#google-analytics-setup)
-* [Terms and License](#terms-and-license)
-* [About Me](#about-me)
+```
+npm install
+```
 
-## Usage
+#### To start the server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm start
+```
 
-### Available Scripts
+#### For Production Build
 
-In the project directory, you can run:
+```
+npm run build
+```
 
-#### `npm install`
-To install the dependencies package.
+Server will be available at http://127.0.0.1:3000 in your browser
 
-#### `npm start`
+# Project snapshot
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Home page
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/19981097/86140838-218ec980-bb13-11ea-87c5-504d68c8d2a4.png)
 
-#### `npm test`
+## Sidebar
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/19981097/86140963-4aaf5a00-bb13-11ea-854e-012077dd6101.png)
 
-#### `npm run build`
+## Resume
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/19981097/86141072-6fa3cd00-bb13-11ea-98d4-459d59af8a15.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Portfolio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/19981097/86141235-9f52d500-bb13-11ea-9d7b-44b982a6fd3f.png)
 
-#### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![image](https://user-images.githubusercontent.com/19981097/86141330-bf829400-bb13-11ea-9070-ecd62027078f.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<blockquote>
+Mahmudul alam
+Email: expelmahmud@gmail.com
+</blockquote>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-### Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-#### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-#### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-#### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-#### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-#### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-#### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-### Google Analytics Setup
-
-This template uses the [React Google Analytics Module](https://github.com/react-ga/react-ga).
-
-In order to track visitors, you need to set an [environment variable](https://create-react-app.dev/docs/adding-custom-environment-variables/) called `REACT_APP_GA_CODE` storing your [GA Tracking ID](https://support.google.com/analytics/answer/7372977).
-
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
----
-
-### Like my work?
-
-<a href="https://www.buymeacoffee.com/braydenw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="210" ></a>
-
-Made by [@BraydenTW](https://github.com/braydentw)
+========Thank You !!!=========
