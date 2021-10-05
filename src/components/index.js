@@ -5,6 +5,7 @@ import Header from "./Header";
 import Particles from "./Particles";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
+import Footer from "./Footer";
 
 const Home = (props) => {
   return (
@@ -13,6 +14,7 @@ const Home = (props) => {
       <Particles />
       <Resume />
       <Portfolio />
+      <Footer />
     </React.Fragment>
   );
 };

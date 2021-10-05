@@ -8,12 +8,13 @@ import Box from "@material-ui/core/Box";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-    height: "100vh",
+    height: "100%",
+    paddingBottom: "50px",
   },
   timeLine: {
     position: "relative",
     padding: "1rem",
-    margin: "o auto",
+    margin: "0 auto",
     "&:before": {
       content: "''",
       position: "absolute",
@@ -73,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
   timeLineYear: {
     textAlign: "center",
     maxWidth: "9.375rem",
-    margin: "0 3rem 0 auto",
+    margin: "10px 3rem 0 auto",
     fontSize: "1.8rem",
     color: "#fff",
     background: "tomato",
@@ -87,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "0 auto",
       "&:nth-of-type(2n)": {
         float: "none",
-        margin: "0 auto",
+        margin: "50px auto 0",
       },
       "&:nth-of-type(2n):before": {
         display: "none",
