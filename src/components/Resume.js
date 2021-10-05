@@ -8,6 +8,7 @@ import Box from "@material-ui/core/Box";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
+    height: "100vh",
   },
   timeLine: {
     position: "relative",
@@ -109,6 +110,9 @@ const useStyles = makeStyles((theme) => ({
   subtitle1: {
     color: "tan",
   },
+  bold: {
+    fontWeight: "bold",
+  },
 }));
 
 const Resume = () => {
@@ -139,7 +143,27 @@ const Resume = () => {
             align='left'
             className={classes.subtitle1}>
             <ul>
-              <li>hi</li>
+              <li>
+                Deployed and maintained affiliate tracking software using
+                <span className={classes.bold}> MERN </span>
+                stack on <span className={classes.bold}>AWS etc2</span> in which
+                save <span className={classes.bold}>15%</span> cost compared to
+                buying a physical server
+              </li>
+              <li>
+                Fixed bugs and implement new design from existing websites using
+                <span className={classes.bold}> Vue</span>,
+                <span className={classes.bold}>Vuex</span> and
+                <span className={classes.bold}> Nuxtjs</span>. Implemented
+                enhancements that significantly improved web functionality and
+                loading speed by <span className={classes.bold}> 13%</span>
+              </li>
+              <li>
+                Created <span className={classes.bold}>Nodejs</span> application
+                for automatically crawl 2000 job data from Linkedin Job and
+                upload on <span className={classes.bold}>Firebase </span>
+                database in under 2s
+              </li>
             </ul>
           </Typography>
         </Box>
@@ -163,7 +187,22 @@ const Resume = () => {
             align='left'
             className={classes.subtitle1}>
             <ul>
-              <li>hello</li>
+              <li>
+                Developed dynamic and interactive website using
+                <span className={classes.bold}> Pug </span>,
+                <span className={classes.bold}>Gulp </span>,
+                <span className={classes.bold}>Sass </span>
+                and <span className={classes.bold}>jQuery</span> that ensured
+                high traffic, page views, and User Experience
+              </li>
+              <li>
+                Oversaw full life cycle of software development for 3 projects
+                with 100% on time delivery while staying 5% under budget
+              </li>
+              <li>
+                Designed processes for cleanup and performance improvement, that
+                minimized downtime by 13%
+              </li>
             </ul>
           </Typography>
         </Box>

@@ -22,7 +22,7 @@ import project6 from "../images/react.png";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-    height: "100%",
+    height: "100vh",
   },
   cardContainer: {
     maxWidth: 345,
