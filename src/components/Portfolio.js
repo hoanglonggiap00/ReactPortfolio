@@ -12,12 +12,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import covid19tracker from "../images/covid19tracker.png";
+import feedbackSender from "../images/feedbackSender.png";
+import pomofocus from "../images/pomofocus.png";
+import secretRoomChat from "../images/secretRoomChat.png";
+import sudoku from "../images/sudoku.png";
+import weather from "../images/weather.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -38,52 +38,63 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
-    image: project1,
+    name: "Covid19 Case Tracker",
+    short_description:
+      "A web application for keeping track of Corona virus cases at any country",
+    description: `Created a web application for keeping track of Corona virus cases at any country and graph display fortotal cases by day`,
+    technology: "React, Highcharts, MaterialUI",
+    image: covid19tracker,
+    link: "https://covid19-case-tracker-linh.herokuapp.com",
+    code: "https://github.com/linhcu1612/CovidTracker",
   },
   {
-    name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project2,
+    name: "Feedback Sender",
+    short_description:
+      "A web application for sending survey to customer and real-time tracking of the response from receiver",
+    description: `Developed web application for sending survey to customer and real-time tracking of the response from receiver by using SendGrid’s WebhookAPI with the ability to add credits by integrating StripeAPI.`,
+    technology: "React, Nodejs, Expressjs, MongoDB, WebhookAPI",
+    image: feedbackSender,
+    link: "https://full-stack-application.herokuapp.com",
+    code: "https://github.com/linhcu1612/FeedbackSender",
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project3,
+    name: "Focus With Pomodoro",
+    short_description: "A task management software using Pomodoro technique",
+    description: `Developed a task management software using Pomodoro technique in which user focus to finish a task in 25 minutes, add in with the ability to play study music in the background`,
+    technology: "React, Redux, MaterialUI, howler.js",
+    image: pomofocus,
+    link: "https://pomofocus-linh.herokuapp.com",
+    code: "https://github.com/linhcu1612/Pomofocus",
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project4,
+    name: "Secret Room Chat",
+    short_description:
+      "A real-time chat application using Firebase's Firestore Database",
+    description: `Created web application for real-time chat application using Firebase's Firestore Database. Users can create new chat room and invite new users to the chat room.`,
+    technology: "React, Redux, Styled Component, Firebase",
+    image: secretRoomChat,
+    link: "https://chatapp-5c2b7.web.app",
+    code: "https://github.com/linhcu1612/ChatApp",
   },
   {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project5,
+    name: "Sudoku Game Application",
+    short_description: "A desktop application for solving Sudoku",
+    description: `Developed desktop application for solving Sudoku with implement of backtracking algorithms for auto solving.`,
+    technology:
+      "Java, Swing, Design Pattern, Object Oriented Programming theory",
+    image: sudoku,
+    link: "",
+    code: "https://github.com/linhcu1612/ChatApp",
   },
   {
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project6,
+    name: "Weather Application",
+    short_description:
+      "web application for real-time weather at most of the large city",
+    description: `Created web application for real-time weather at most of the large city using OpenWeatherMap API.`,
+    technology: "HTML, CSS, vanilla JavaScript",
+    image: weather,
+    link: "",
+    code: "https://github.com/linhcu1612/weather-app-js",
   },
 ];
 
@@ -111,15 +122,20 @@ const Portfolio = () => {
                     {project.name}
                   </Typography>
                   <Typography variant='body2' color='textSecondary'>
-                    {project.description}
+                    {project.short_description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
-                <Button size='small' color='primary'>
-                  Share
+              <CardActions
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  margin: "auto 50px",
+                }}>
+                <Button size='small' color='primary' href={project.code}>
+                  Code
                 </Button>
-                <Button size='small' color='primary'>
+                <Button size='small' color='primary' href={project.link}>
                   Live Demo
                 </Button>
               </CardActions>
