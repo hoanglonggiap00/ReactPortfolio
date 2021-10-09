@@ -12,12 +12,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import covid19tracker from "../images/covid19tracker.png";
-import feedbackSender from "../images/feedbackSender.png";
-import pomofocus from "../images/pomofocus.png";
-import secretRoomChat from "../images/secretRoomChat.png";
-import sudoku from "../images/sudoku.png";
-import weather from "../images/weather.png";
+import covid19tracker from "../assets/images/covid19tracker.png";
+import feedbackSender from "../assets/images/feedbackSender.png";
+import pomofocus from "../assets/images/pomofocus.png";
+import secretRoomChat from "../assets/images/secretRoomChat.png";
+import sudoku from "../assets/images/sudoku.png";
+import weather from "../assets/images/weather.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
