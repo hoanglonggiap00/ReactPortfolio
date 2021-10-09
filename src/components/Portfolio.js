@@ -118,11 +118,8 @@ const Portfolio = () => {
                   image={project.image}
                 />
                 <CardContent>
-                  <Typography variant='h5' gutterBottom>
+                  <Typography variant='h5' gutterBottom align='center'>
                     {project.name}
-                  </Typography>
-                  <Typography variant='body2' color='textSecondary'>
-                    {project.short_description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
