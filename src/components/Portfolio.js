@@ -3,7 +3,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -11,6 +10,11 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import CodeIcon from "@mui/icons-material/Code";
+import LinkIcon from "@mui/icons-material/Link";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import covid19tracker from "../assets/images/covid19tracker.png";
 import feedbackSender from "../assets/images/feedbackSender.png";
@@ -19,6 +23,26 @@ import secretRoomChat from "../assets/images/secretRoomChat.png";
 import sudoku from "../assets/images/sudoku.png";
 import weather from "../assets/images/weather.png";
 
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
@@ -26,8 +50,13 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "50px",
   },
   cardContainer: {
+    marginBottom: 0,
     maxWidth: 345,
+    borderRadius: "16px",
     margin: "3rem auto",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
   heading: {
     color: "tomato",
@@ -105,10 +134,9 @@ const Portfolio = () => {
       <Typography variant='h4' align='center' className={classes.heading}>
         Personal Projects
       </Typography>
-      <Grid container justify='center'>
-        {/* Projects */}
+      <Carousel responsive={responsive}>
         {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={4} key={i}>
+          <>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -118,28 +146,40 @@ const Portfolio = () => {
                   image={project.image}
                 />
                 <CardContent>
-                  <Typography variant='h5' gutterBottom align='center'>
+                  <Typography
+                    variant='h5'
+                    gutterBottom
+                    align='center'
+                    style={{ fontWeight: "bold", color: "tan" }}>
                     {project.name}
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  margin: "auto 50px",
-                }}>
-                <Button size='small' color='primary' href={project.code}>
-                  Code
-                </Button>
-                <Button size='small' color='primary' href={project.link}>
-                  Live Demo
-                </Button>
-              </CardActions>
             </Card>
-          </Grid>
+            <CardActions
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                margin: "auto 65px",
+              }}>
+              <Button
+                size='medium'
+                style={{ color: "tomato" }}
+                href={project.code}
+                startIcon={<CodeIcon />}>
+                Code
+              </Button>
+              <Button
+                size='medium'
+                style={{ color: "tomato" }}
+                href={project.link}
+                startIcon={<LinkIcon />}>
+                Live Demo
+              </Button>
+            </CardActions>
+          </>
         ))}
-      </Grid>
+      </Carousel>
     </Box>
   );
 };

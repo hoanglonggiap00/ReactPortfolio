@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
   timeLineYear: {
     textAlign: "center",
     maxWidth: "9.375rem",
-    margin: "10px 3rem 0 auto",
+    margin: "15px 3rem 0 auto",
     fontSize: "1.8rem",
     color: "#fff",
     background: "tomato",
@@ -147,7 +147,7 @@ const Resume = () => {
               <li>
                 Deployed and maintained affiliate tracking software using
                 <span className={classes.bold}> MERN </span>
-                stack on <span className={classes.bold}>AWS etc2</span> in which
+                stack on <span className={classes.bold}>AWS ec2</span> in which
                 save <span className={classes.bold}>15%</span> cost compared to
                 buying a physical server
               </li>
