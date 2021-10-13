@@ -54,9 +54,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     borderRadius: "16px",
     margin: "3rem auto",
-    "&:hover": {
-      transform: "scale(1.1)",
-    },
   },
   heading: {
     color: "tomato",
@@ -160,7 +157,7 @@ const Portfolio = () => {
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                margin: "auto 65px",
+                margin: "auto 20%",
               }}>
               <Button
                 size='medium'
