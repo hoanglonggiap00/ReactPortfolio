@@ -84,13 +84,13 @@ const projects = [
     code: "https://github.com/linhcu1612/FeedbackSender",
   },
   {
-    name: "Focus With Pomodoro",
+    name: "FOPO",
     short_description: "A task management software using Pomodoro technique",
     description: `Developed a task management software using Pomodoro technique in which user focus to finish a task in 25 minutes, add in with the ability to play study music in the background`,
-    technology: "React, Redux, MaterialUI, howler.js",
+    technology: "React, Redux, MaterialUI",
     image: pomofocus,
-    link: "https://pomofocus-linh.herokuapp.com",
-    code: "https://github.com/linhcu1612/Pomofocus",
+    link: "https://fopo.herokuapp.com/",
+    code: "https://github.com/linhcu1612/FOMO",
   },
   {
     name: "Secret Room Chat",

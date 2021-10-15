@@ -3,3 +3,7 @@
 [0m2021.10.09 23:38:58 WARN  Build server is not auto-connectable.[0m
 [0m2021.10.09 23:38:58 WARN  no build tool detected in workspace '/Users/nhatlinh/Desktop/React/react-portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.10.10 18:23:29 INFO  shutting down Metals[0m
+[0m2021.10.15 20:25:45 INFO  Started: Metals version 0.10.7 in workspace '/Users/nhatlinh/Desktop/React/react-portfolio' for client Visual Studio Code 1.60.2.[0m
+[0m2021.10.15 20:25:59 INFO  time: initialize in 14s[0m
+[0m2021.10.15 20:26:02 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.15 20:26:02 WARN  no build tool detected in workspace '/Users/nhatlinh/Desktop/React/react-portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
